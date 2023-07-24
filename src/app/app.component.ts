@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-app';
+
+  appRoutes = [
+    'first-child',
+    'first-child/second-child',
+    'first-child/second-child/third-child'
+  ]
+
 }
