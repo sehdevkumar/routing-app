@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SecondChildModule } from './second-child/second-child.module';
+import { RoutePreservedService } from './services/route-preserved.service';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -14,8 +16,9 @@ import { SecondChildModule } from './second-child/second-child.module';
     BrowserModule,
     AppRoutingModule,
     FirstChildModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RoutePreservedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

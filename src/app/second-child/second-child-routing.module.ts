@@ -8,7 +8,7 @@ const routes: Routes = [
     component: SecondChildComponent,
     children: [
       {
-        path: 'second-child/third-child',
+        path: 'second-child',
         loadChildren: () => import('../third-child/third-child.module').then(m => m.ThirdChildModule),
       },
     ],
